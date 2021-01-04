@@ -1,0 +1,50 @@
+<section class="w-50-p h-40-v d-flex bg-gray m-0 p-0 justify-content-center align-items-center center " fxLayout="row">
+  <article class="bg-white w-30-p h-30-v border-radius-6 animate__animated animate__backInDown">
+    <h2 class="text-align-center font-size-17 pl-12">Editar contacto</h2>
+    <form novalidate  [formGroup]="formRegistro" fxLayout="column" fxLayoutAlign="center center">
+      <section fxLayout="row" fxLayout.xs="column" fxFlex="100" fxLayoutGap="24px" class="w-48-p">
+        <mat-form-field appearance="outline" fxFlex="100">
+          <mat-label>Numero de Identificación</mat-label>
+          <input matInput placeholder="123456789" formControlName="ID">
+          <mat-icon matSuffix>contact_page</mat-icon>
+          <mat-error *ngIf="formRegistro.get('ID').errors?.required">ID es requerido.</mat-error>
+          <mat-error *ngIf="formRegistro.get('ID').errors?.minlength">El ID debe ser mayor a 9 digitos.</mat-error>
+          <mat-error *ngIf="formRegistro.get('ID').errors?.pattern">El ID debe ser Numerico.</mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline" fxFlex="100">
+          <mat-label>Nombre Completo</mat-label>
+          <input matInput placeholder="Juancho Perez" formControlName="nombre">
+          <mat-icon matSuffix>face</mat-icon>
+          <mat-error *ngIf="formRegistro.get('nombre').errors?.required">Nombre es requerido.</mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline" fxFlex="100">
+          <mat-label>Celular</mat-label>
+          <input matInput placeholder="Ej. +57xxxxxxxxxx" formControlName="celular">
+          <mat-icon matSuffix>contact_phone</mat-icon>
+          <mat-error *ngIf="formRegistro.get('celular').errors?.required">Nombre es requerido.</mat-error>
+          <mat-error *ngIf="formRegistro.get('celular').errors?.pattern">Verifique numero celular, Ejemplo: +57xxxxxxxxx.</mat-error>
+        </mat-form-field>
+      </section>
+      <section fxLayout="row" fxFlex="100" fxLayoutGap="24px" class="w-48-p">
+        <mat-form-field appearance="outline" fxFlex="100">
+          <mat-label>Dirección</mat-label>
+          <input matInput placeholder="AV Pricipal calle 1, 2" formControlName="direccion">
+          <mat-icon matSuffix>person_pin</mat-icon>
+          <mat-error *ngIf="formRegistro.get('direccion').errors?.required">Nombre es requerido.</mat-error>
+        </mat-form-field>
+      </section>
+      <section fxLayout="row" fxFlex="100" fxLayoutGap="24px" class="w-48-p">
+        <mat-form-field appearance="outline" fxFlex="100">
+          <mat-label>Fecha Nacimiento</mat-label>
+          <input matInput [matDatepicker]="dp3" formControlName="fecha">
+          <mat-datepicker-toggle matSuffix [for]="dp3"></mat-datepicker-toggle>
+          <mat-datepicker #dp3 disabled="false"></mat-datepicker>
+        </mat-form-field>
+      </section>
+      <section fxLayout="row" fxFlex="100" fxLayoutGap="24px" class="w-48-p">
+      	<button mat-raised-button color="warn" routerLink="/list" fxFlex="60">Regresar</button>
+      <button mat-raised-button color="primary" type="submit" (click)="onSubmit()" [disabled]="formRegistro.invalid" fxFlex="60">Actualizar</button>
+      </section>
+    </form>
+  </article>
+</section>

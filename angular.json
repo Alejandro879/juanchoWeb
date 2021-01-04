@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "juanchoWeb"
+  "defaultProject": "juanchoWeb",
+  "cli": {
+    "analytics": false
+  }
 }

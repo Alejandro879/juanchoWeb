@@ -1,0 +1,134 @@
+.box-info {
+  mat-card {
+    article {
+      span {
+        background: #9C27B0;
+        color: white;
+        font-weight: 600;
+        height: 42px;
+        width: 43px;
+        border-radius: 50%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+section.graph {
+  min-height: 425px;
+  position: relative;
+  top: 20px;
+  border-radius: 20px;
+
+  .linea {
+    width: 60%;
+    height: 400px;
+    display: block;
+    background: white;
+    border-radius: 20px 0px 0px 20px;
+  }
+
+  article.table-content {
+    width: 32%;
+    height: 400px;
+    border-radius: 0px 20px 20px 0px;
+    overflow: hidden;
+    border-left: 1px solid #dedede;
+
+    h2 {
+      text-align: center;
+    }
+
+    section.table {
+      display: block;
+      background: white;
+      padding: 16px;
+      margin: auto;
+      width: 95%;
+      min-width: 350px;
+      min-height: 365px;
+
+      article.header {
+        width: 100%;
+        background: #FFC107;
+        color: white;
+        text-align: left;
+      }
+
+      article.body {
+        border-radius: 20px;
+
+        &:nth-child(even) {
+          background: #ffc1073b;
+          color: #101010;
+        }
+
+        &:hover {
+          background: aqua;
+          cursor: pointer;
+          transition: all 0.2s ease;
+        }
+      }
+
+      .col {
+        margin: auto;
+      }
+
+      .btn-add {
+        background-color: #9c27b0;
+        color: white;
+        position: absolute;
+        bottom: 5px;
+        right: 35px;
+      }
+    }
+  }
+}
+
+.animate__delay__800 {
+  animation-delay: 0.4s
+}
+
+
+@media only screen and (max-width: 1000px) {
+  section.box-info {
+    display: block !important;
+    width: 100%;
+
+    mat-card {
+      width: 90%;
+      margin-top: 18px;
+    }
+  }
+
+  section.graph {
+    flex-direction: column-reverse;
+
+    >article {
+      width: 96% !important;
+      height: max-content !important;
+      border-radius: initial !important;
+
+      section {
+        min-height: initial !important;
+
+        button {
+          bottom: initial!important;
+          right: -3px!important;
+          top: -12px;
+        }
+      }
+    }
+
+    article.linea {
+      margin-bottom: 24px;
+      padding-bottom: 24px;
+
+    }
+  }
+
+
+}

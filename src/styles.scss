@@ -1,1 +1,200 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,600;1,400;1,500&display=swap');
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$juanchoWeb-primary: mat-palette($mat-indigo);
+$juanchoWeb-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$juanchoWeb-warn: mat-palette($mat-red);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$juanchoWeb-theme: mat-light-theme((color: (primary: $juanchoWeb-primary,
+accent: $juanchoWeb-accent,
+warn: $juanchoWeb-warn,
+)));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($juanchoWeb-theme);
+
 /* You can add global styles to this file, and also import other style files */
+* {
+  font-family: 'Rubik', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mat-drawer-inner-container {
+  background: #fafafa;
+}
+
+// layaut
+@for $i from 1 through 50 {
+  .w-#{$i}-p {
+    width: 2% * $i;
+  }
+}
+
+// layaut
+@for $i from 1 through 100 {
+  .w-#{$i} {
+    width: 2px * $i;
+  }
+}
+
+@for $i from 1 through 50 {
+  .h-#{$i}-v {
+    height: 2vh * $i;
+  }
+}
+
+@for $i from 1 through 50 {
+  .h-#{$i} {
+    height: 2px * $i;
+  }
+}
+
+// PADDING
+@for $i from 1 through 50 {
+  .p-#{$i} {
+    padding: 2px * $i;
+  }
+}
+
+@for $i from 1 through 50 {
+  .pl-#{$i} {
+    padding-left: 2px * $i;
+  }
+}
+
+@for $i from 1 through 50 {
+  .pr-#{$i} {
+    padding-right: 2px * $i;
+  }
+}
+
+@for $i from 1 through 50 {
+  .pt-#{$i} {
+    padding-top: 2px * $i;
+  }
+}
+
+@for $i from 1 through 50 {
+  .pb-#{$i} {
+    padding-bottom: 2px * $i;
+  }
+}
+
+// MARGIN
+@for $i from 1 through 50 {
+  .m-#{$i} {
+    margin: 2px * $i;
+  }
+}
+
+@for $i from 1 through 50 {
+  .ml-#{$i} {
+    margin-left: 2px * $i;
+  }
+}
+
+@for $i from 1 through 50 {
+  .mr-#{$i} {
+    margin-right: 2px * $i;
+  }
+}
+
+@for $i from 1 through 50 {
+  .mt-#{$i} {
+    margin-top: 2px * $i;
+  }
+}
+
+@for $i from 1 through 50 {
+  .mb-#{$i} {
+    margin-bottom: 2px * $i;
+  }
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.m-auto-h {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.m-auto-r {
+  margin-right: auto;
+}
+
+.red {
+  background: #e74c3c !important;
+  box-shadow: 0px 0px 10px #e74c3c;
+}
+
+.yellow {
+  background: #f1c40f !important;
+  box-shadow: 0px 0px 10px #f1c40f;
+}
+
+.green {
+  background: #27ae60 !important;
+  box-shadow: 0px 0px 10px #27ae60;
+}
+
+
+
+// TOOL
+.row {
+  display: flex !important;
+}
+
+.middel {
+  align-items: center;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+
+mat-card.mat-card {
+  background: whitesmoke;
+  box-shadow: 3px 3px 4px #d6d6d6, -4px -4px 12px #fdfcfc !important;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: black !important;
+  }
+}
