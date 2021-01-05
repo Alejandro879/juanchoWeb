@@ -1,26 +1,8 @@
 # JuanchoWeb
+Es una aplicación web que le permitira gestionar información de contactos `[agregar, editar(actualizar), eliminar]`, ademas permite ver indicadores basico. Esta aplicación web esta pensada para PC o Laptop pero sin embargo funciona para dispositivos moviles. 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+>`Nota:` Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) version **11.0.5.**, lo cual se ocupa un conjunto de libreria descrita mas abajo.*
 
 ## Libreria
 
@@ -29,3 +11,29 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
  3. @angular/router
  4. chart.js
  5. ng2-charts
+
+
+## Development server
+
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+## Pantallas
+`1`
+![home](https://lh3.googleusercontent.com/t1E1BS_3uo1yO9yNe6R3jyxvBijqbIhdvcionDnPyAiFh4gsIiH89443JQhXAYQSJ3XyGJR54O05bDH9ghdi5p8oWQ8eZ1VhyvGcu5JSdsGz4TgTXVcLsK3TKLM_qUC21porAI-fvPoYavKWV2LrTPKQsW9TOI4QYUtl5ZXvzhlpPaUxjuG4iyVZCwhIZqk-oR_VSIClrmMkWGjWDe-K2ESVAKaOIrE8VdHdF91RCuvKsJru2Mkdf2akrIRI3KWKKABI_BgVHXVW4hKgth3dgp-itSVuiTPMgtNf8rJD5gzC0dFNs4GChRg2-zMIBMWiKr9z_2mwIXXGC5muTfu5trbMZ6-QLokhQiKZJ0uXIZUHRpwmLIthcmU1fo0Qq2tZnmc_aL6JY-C4Unujn2d6E9uI4vSgQU-IqhI_FIUh8Bvr_YOibuZASUZRPGKzQE-FqhFmBplNze7vP10GZGjb7OrdX57PoV1APJvaf-HgxWBKOnUDokYFG9tpteP9A9IdK2Bj6aqISBPlT3LDGNn_c5OHrUeaafu7md-4A2fbE-t0zv4H8Zja1F6NyYHjlomRYa1XrVaipXKs48eysPHiNFBZ8DonB_knbpsci4bnHSoWE4o7l5YYKaGiDjUF6IpWlycQ5SKryXCjuc6eLUGPHS8utGklKGHqmn3gLiQmjeMtHKOgostH7y6jv5wPww=w1366-h656-no)
+
+`2`
+![home 2](https://lh3.googleusercontent.com/i6JXummpgzivqXt11CSGUf6DZKHE5Sa1LeEef9y4t1e2hwYGXH2GeAHt0K3MqhyFoRT3UeuGABKu3Qfl7gXqCvo1fPD8FmxBFgIHsoaVjVqc8OCNJDP6lnRTy_WGGPeqARIVOu0pQIgQGRptdokpAmlKwNO4x3KhfB0utinno4jlznvopDrJm8_HXxPLkemvKoql9ZULxJVYySskfIy8CapKOdHk8POsWQ7RHxEBDmS1UafZb9qzkt9zen0rityn8lBALwzph1eNRvy0MZ-zMdWd99QBg5GmPwY4hQMub1aXvaVmXtVfGq_KS93gkZvwSWpHKM7ZdhUXVbZn1Dz5PeT6Ry_FCE1KNGPArelWq2_iWoNTD8ob-XVD-jiRKvC_5-XoC-QnVVXazGCaet-VvpEqgt6O_h06fZXKEHRD3nQE7ECCWB7BL-S99jE7QFjfm-9lIBwvH1ACKZdRv35CaH0vnBfFVw6yYeByua1Vq3MGRyOefPRpzIBUqE47bmWcd2GK1Ej899i8_9IjZkS12poBuaNKtLS1kdYa7ocQXuBc5B0MQ_KCeAUCK20d9M2fn5oZIHYF8V4pPdJLlCufl1tjtQqp0J3RnVYQV6NcigSQBrjsjHnYqTV4kxmUbEUzgmC_ns6YJ7BaKNQk0Su7JzetJ0nT5qT2oJSAl5wyDQXI8UoxFo5VY1JHff1OBw=w522-h252-no)
+
+`3`
+![home 2](https://lh3.googleusercontent.com/shFM5SbZnM-cTgosNE0BMiZ3UG9Vfs57dJtkzNPStC09SZtCQNuSyQ2Xn6om6HU7IjZFIMDwegtAK7OagKMTf7AgfLakGwCnljNf3PhMTiUvZL16my_H0Qo3wmyGh85LLGbaY5YVkXstKtu07dDxnigYPtsiVta-F4fORzoTbzUdXI4dtz3kFbAR78-De3SUrJSSZj47Izp-8xoV68FhLe_PUoeFD4Z250jMapHOlZMyU3o54F2H8k-Iwyl0AuaUxp6M5jgmCslRNTDEA2qI0m-ZBu0-KvmXCS86Fc7fJqGShTIHKp3IuNeo5sKssG1n7k-8l_-Bxb-w_LQ00fnsUbE5VmxHdfhZPndinjoZNyToE6PwmAN-Y76o8oa94ncamqKj47WdQD4vYgA-LE0ddso1Mel2_IDvSqcukTd9c_HZ7_cmLHcNvaslJLWWYZh9Auk5OK4A0NXZuBdPilyNLHPrdwPn5PLpnZEwRFVM1FDN2hyxyOL6yfjEdvT0Hlb5XsVlfSdF1pdU8qfGwIxLW8V-uSowK947LiYOZ96T0BKTkIBdXRq7dQqWjOsdM0biroa5a_3QauZnAqYH37ZFhvHf7iH-1Fz_jVG8aNAUnvEWvapl-YhGWtFvcNbtxnhNsdNmJiXB7SaKn6GddIQMesNyw8YstEBavcT5fL9UZ1xtiSFIys2rqBsXs-IgHg=w1362-h653-no)
+
+
+`4`
+![home 2](https://lh3.googleusercontent.com/qsT8P0QCYigHpvLPF1zMBeYPZLTZS3NUsr7tQHfaY7kzhwBEv5oKRHYkWtrCDPCNs_1dLYsI_ZNsrj56jU3U7T92V7f5E2MEMi4Y0z3iGA9xXXP6rDC-bPZa1BUOC4idb9dSixegLwVWl_Pgdt39XuSy3I_rOu1Djf07OA0dN1HmefQHduMXXEmsNw5L45LG5xggoCgFSiFaawwsDowmYjD6CuOWa4JE4-eLcsDevJVCnN5qO43X8iYLyf_knY7uWPPX5GdPJQQ2Gz_5oD74NTRefk7jixhfg_kcb4HUphT-FxvsOz7pJIEobro6JmBVfs3K-EENnRpibkNbi76_GEv_9e0KMgRcz_4PbDh5-vg-k7iwFAtEU2N_tu-xQ2TEvmTsVthvlIHb0ituaV3Ii05rFyp4P02Bry2yH-m0XyqLzSdDWb-4IfjchtWR-4FvfJls8lI-QSApcsv8VWfNsG08GXGHxi92Q3on8KG2f9nf6yXIcLEfma3t-RmLNBVYSr35KPobuUs3Zh4DIhU68JNOlJVoQtjl4Jz_nGF-5de1diiAgzvO4Xsr8S5CtCnO2Xi-TEA44h9emxhZ9hciCgyDGBdbNg6MksJ6klEnXIx-wWz6Z0nvHiCSPffgtXcV9AX934TRhns0njiXHghWKHVJb3XdK78UrQDdkgIsZbqr61rRydw7jVly-XIdzw=w1358-h654-no)
+
+`5`
+![home 2](https://lh3.googleusercontent.com/2Sz6VeyUDzyxyNCenqJcVBWZrIbZ4WovH2eFqIZOHQNphVCwgUQ6POB8h-_fHB2i2mTnHdOK3Y9ZcDzFJYBKXhbCmCCyyPUQqOwupqc7zRWfN_1-xjuU3m4Alv2-biCpJxLk3YVX-6SwNQwMDvnrfSqODcOmVEutbILD31CRI0TqfMGHZpjqxQwvS7Nzl356m4xYZFH7hsMOe7wcqw2FQf6tr0AueOU4RWgb_OjbjPalUpQjpNrsBZk_1GgT904LM6F5LtcgNUygbJdeOEJUUx3SKcO3L5yubcQkA-Iltf4oIqLmC3K-MPjb3k7NgdPxQHXrhUxZFqb5C72_g2KLl8PvN8ruaaQ0ysr0u5sFwR2C4wZIquKDtERaobrlbuRjkZ4qGEy31yigV-EByu3zPBOKmhzC4OoAezeU5X0aqIUPsPOGucxFzur5Ufxmi9yD9HdXea4aBHwAqocD44f56NR-vA-P3rvss1MhBUtadT410xRA_VK2VguIRgysnxfLIm-GZKJcqR-zmNRMMaQgAvcjJD64JttFeU-PMLMZJAuu9nrG5dujRn6HPLCatL4luvv_rO7o0ZATA8MoSTjOtkewyc0Oid0G6L9v89Fc7lfd-R_AbQ6h1949gzhzKMfJAcHsINQjULnEuK0LWx9JND_bcH7q1LPvx_pdhwNHFOusANAkcQEnGjDfrerY3Q=w1365-h653-no)
