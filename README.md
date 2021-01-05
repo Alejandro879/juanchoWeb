@@ -1,5 +1,5 @@
 # JuanchoWeb
-Es una aplicación web que le permitira gestionar información de contactos `[agregar, editar(actualizar), eliminar]`, ademas permite ver indicadores basico. Esta aplicación web esta pensada para PC o Laptop pero sin embargo funciona para dispositivos moviles. 
+Es una aplicación web que le permitira gestionar información de contactos `[agregar, editar(actualizar), eliminar]`, ademas permite ver indicadores Básicos. Esta aplicación web esta pensada para PC o Laptop pero sin embargo funciona para dispositivos moviles. 
 
 
 >`Nota:` Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) version **11.0.5.**, lo cual se ocupa un conjunto de libreria descrita mas abajo.*
