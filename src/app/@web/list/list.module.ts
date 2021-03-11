@@ -8,7 +8,8 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatTableModule} from '@angular/material/table';
 import { FlexLayoutModule } from '@angular/flex-layout';
-
+import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatSortModule} from '@angular/material/sort';
 
 @NgModule({
   declarations: [ListComponent],
@@ -18,7 +19,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatButtonModule,
     MatIconModule,
     MatTableModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatTooltipModule,
+    MatSortModule
   ]
 })
 export class ListModule { }

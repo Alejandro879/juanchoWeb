@@ -3,7 +3,7 @@
     <!--- Note that these columns can be defined in any order.
         The actual rendered columns are set as a property on the row definition" -->
     <!-- Position Column -->
-    <ng-container matColumnDef="position" >
+    <ng-container matColumnDef="position">
       <th mat-header-cell *matHeaderCellDef fxHide.xs> No. </th>
       <td mat-cell *matCellDef="let element; let i = index" fxHide.xs> {{(i + 1)}} </td>
     </ng-container>
@@ -14,39 +14,55 @@
     <!-- Name Column -->
     <ng-container matColumnDef="nombre">
       <th mat-header-cell *matHeaderCellDef> Nombres </th>
-      <td mat-cell *matCellDef="let element"> {{element.nombre}} </td>
+      <td mat-cell *matCellDef="let element" class=" ">
+        <h4 fxHide.xs><mat-icon class="pr-5" fxHide.sm style="position: relative; top: 5px">face</mat-icon>  {{element.nombre}}</h4>
+        <div class=" align-items-center" fxHide.gt-xs  fxLayout="row">
+          <!-- <mat-icon class="pr-5">face</mat-icon> -->
+          <span class="content">
+            <h5>{{element.nombre}}</h5>
+            <div class="context">
+              <p>{{element.ID}}</p>
+              <p>{{element.fecha | date: 'Y-MM-dd'}}</p>
+            </div>
+          </span>
+        </div>
+      </td>
     </ng-container>
     <!-- Weight Column -->
     <ng-container matColumnDef="celular">
-      <th mat-header-cell *matHeaderCellDef > Celular </th>
+      <th mat-header-cell *matHeaderCellDef> Celular </th>
       <td mat-cell *matCellDef="let element"> {{element.celular}} </td>
     </ng-container>
     <ng-container matColumnDef="direccion">
-      <th mat-header-cell *matHeaderCellDef fxHide.xs> Dirección </th>
-      <td mat-cell *matCellDef="let element; let i = index" fxHide.xs> {{element.direccion}} </td>
+      <th mat-header-cell *matHeaderCellDef fxHide.sm fxHide.xs> Dirección </th>
+      <td mat-cell *matCellDef="let element; let i = index" fxHide.sm fxHide.xs> {{element.direccion}} </td>
     </ng-container>
     <!-- Symbol Column -->
     <ng-container matColumnDef="fecha">
-      <th mat-header-cell *matHeaderCellDef fxHide.xs> Fecha </th>
-      <td mat-cell *matCellDef="let element" fxHide.xs> {{element.fecha}} </td>
+      <th mat-header-cell *matHeaderCellDef fxHide.sm fxHide.xs> Fecha Cumpleaño </th>
+      <td mat-cell *matCellDef="let element" fxHide.sm fxHide.xs>
+        {{element.fecha | date: 'Y-MM-dd'}}
+        <mat-icon class="fg-cake animate__animated animate__tada cursor-poiter" *ngIf="_isCumple(element)" matTooltip="{{element.nombre}} esta de Cumpleaño.">
+          cake</mat-icon>
+      </td>
     </ng-container>
     <!-- Botones -->
     <ng-container matColumnDef="edit">
       <th mat-header-cell *matHeaderCellDef class="w-40"> </th>
       <td mat-cell *matCellDef="let element" class="w-40">
-        <button mat-icon-button color="accent" routerLink="/edit/{{element.ID}}">
+        <button mat-icon-button color="accent" routerLink="/edit/{{element.ID}}" matTooltip="Editar contacto">
           <mat-icon>edit</mat-icon>
         </button>
       </td>
     </ng-container>
     <ng-container matColumnDef="delete">
       <th mat-header-cell *matHeaderCellDef class="w-40">
-        <button mat-mini-fab color="primary" routerLink="/add">
-          <mat-icon>person_add</mat-icon>
+        <button mat-mini-fab color="primary" routerLink="/add" class="animate__animated animate__fadeInRight">
+          <mat-icon matTooltip="Agregar nuevo">person_add</mat-icon>
         </button>
       </th>
       <td mat-cell *matCellDef="let element;  let i = index" class="w-40">
-        <button mat-icon-button color="warn" (click)="dellUsuario(i)">
+        <button mat-icon-button color="warn" (click)="dellUsuario(i)" matTooltip="Eliminar contacto">
           <mat-icon>delete_sweep</mat-icon>
         </button>
       </td>

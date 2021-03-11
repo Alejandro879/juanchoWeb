@@ -1,4 +1,4 @@
-<div style="display: block;">
+<div style="display: block;" *ngIf="Usuarios.length">
   <canvas baseChart 
     [datasets]="lineChartData"
     [labels]="lineChartLabels"
@@ -7,4 +7,8 @@
     [chartType]="lineChartType"
     [plugins]="lineChartPlugins">
   </canvas>
+</div>
+<!-- Mensaje de grafica -->
+<div *ngIf="!Usuarios.length" class="row center" style="height: 100%;">
+	<h1  class="center m-auto row animate__animated animate__fadeInUp">Añade un contacto a tu lista para ver graficas de contenido</h1>
 </div>

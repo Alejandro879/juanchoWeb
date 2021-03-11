@@ -1,14 +1,14 @@
 <section class="main h-34-v">
   <aside class="keep "  [ngClass]="{'width': false}">
     <ul>
-      <li>
+      <li (click)="toggle.emit('')">
         <a routerLink="">
           <span><i class="material-icons red-fg">donut_small</i></span>
           Dashboard
           <span class="notif red">1</span>
         </a>
       </li>
-      <li>
+      <li (click)="toggle.emit('')">
         <a routerLink="/list">
           <span><i class="material-icons yellow-fg">sentiment_very_satisfied</i></span>
           Mis Contactos

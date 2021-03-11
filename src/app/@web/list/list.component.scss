@@ -1,4 +1,25 @@
-@media only screen and (max-width: 1000px) {
+.fg-cake {
+  color: #FF9800
+}
+
+.align-items-center{
+	align-items:center;
+}
+
+.content {
+	h5{margin: 0}
+  .context {
+    font-size: 10px;
+
+    p {
+      margin: 0px;
+      padding: 0px;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
 
   th.cdk-column-nombre,
   td.cdk-column-nombre {

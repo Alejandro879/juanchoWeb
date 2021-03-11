@@ -49,6 +49,8 @@ body {
   background: #fafafa;
 }
 
+.cursor-poiter{cursor: pointer;}
+
 // layaut
 @for $i from 1 through 50 {
   .w-#{$i}-p {

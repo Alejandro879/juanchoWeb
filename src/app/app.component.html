@@ -1,6 +1,6 @@
 <mat-drawer-container class="h-50-v" [hasBackdrop]="false" autosize>
   <mat-drawer #drawer mode="side">
-    <app-sidenav></app-sidenav>
+    <app-sidenav (toggle)="drawer.toggle()"></app-sidenav>
   </mat-drawer>
   <mat-drawer-content>
     <mat-toolbar>
@@ -9,7 +9,7 @@
       </button>
       <span>Juancho Web</span>
     </mat-toolbar>
-    <section class="pl-12 pt-8 pr-12">
+    <section class="pl-12 pt-8 pr-12 conten">
       <router-outlet></router-outlet>
     </section>
   </mat-drawer-content>

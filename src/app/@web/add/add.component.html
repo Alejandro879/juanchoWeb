@@ -4,7 +4,7 @@
     <form novalidate (ngSubmit)="onSubmit()" [formGroup]="formRegistro" fxLayout="column" fxLayoutAlign="center center">
       <section fxLayout="row" fxLayout.xs="column" fxFlex="100" fxLayoutGap="24px" class="w-48-p">
         <mat-form-field appearance="outline" fxFlex="100">
-          <mat-label>Numero de Identificación</mat-label>
+          <mat-label>número de Identificación</mat-label>
           <input matInput placeholder="123456789" formControlName="ID">
           <mat-icon matSuffix>contact_page</mat-icon>
           <mat-error *ngIf="formRegistro.get('ID').errors?.required">ID es requerido.</mat-error>
@@ -22,7 +22,7 @@
           <input matInput placeholder="Ej. +57xxxxxxxxxx" formControlName="celular">
           <mat-icon matSuffix>contact_phone</mat-icon>
           <mat-error *ngIf="formRegistro.get('celular').errors?.required">Nombre es requerido.</mat-error>
-          <mat-error *ngIf="formRegistro.get('celular').errors?.pattern">Verifique numero celular, Ejemplo: +57xxxxxxxxx.</mat-error>
+          <mat-error *ngIf="formRegistro.get('celular').errors?.pattern">Verifique número celular, Ejemplo: +57xxxxxxxxx.</mat-error>
         </mat-form-field>
       </section>
       <section fxLayout="row" fxFlex="100" fxLayoutGap="24px" class="w-48-p">

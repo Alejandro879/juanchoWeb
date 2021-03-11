@@ -31,17 +31,17 @@
   <article class="table-content">
     <section class="table">
       <article class="name-table">
-        <h2>Ultimos contacto registrados</h2>
+        <h2>Últimos contacto registrados</h2>
       </article>
       <article class="row header h-22">
         <div class="col">Nombres</div>
         <div class="col">Número</div>
       </article>
-      <article class="row body h-17" *ngFor="let item of Usuarios.slice(0, 5)">
+      <article class="row body h-17" *ngFor="let item of Usuarios.slice(0, 5)" matTooltip="ID: {{item.ID}} ">
         <div class="pl-12 pt-4 m-auto-r">{{item.nombre | uppercase}}</div>
         <div class="pr-12 pt-4">{{item.celular}}</div>
       </article>
-      <button mat-icon-button color="secundary" aria-label="Menu icon" class="btn-add" routerLink="/add">
+      <button mat-icon-button color="secundary" aria-label="Menu icon" class="btn-add" routerLink="/add" matTooltip="Agregar nuevo">
         <mat-icon>person_add</mat-icon>
       </button>
     </section>
